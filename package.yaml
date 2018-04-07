@@ -1,6 +1,6 @@
 name:                lrucaching-prac
 version:             0.1.0.0
-github:              "nwtgck/lrucaching-prac"
+github:              "nwtgck/lrucaching-prac-haskell"
 license:             BSD3
 author:              "Ryo Ota"
 maintainer:          "nwtgck@gmail.com"
@@ -22,9 +22,6 @@ description:         Please see the README on Github at <https://github.com/nwtg
 dependencies:
 - base >= 4.7 && < 5
 
-#library:
-#  source-dirs: src
-
 executables:
   lrucaching-prac-exe:
     main:                Main.hs
@@ -33,8 +30,8 @@ executables:
     - -threaded
     - -rtsopts
     - -with-rtsopts=-N
-    dependencies: []
-#    - lrucaching-prac
+    dependencies: 
+    - lrucaching
 
 tests:
   lrucaching-prac-test:
