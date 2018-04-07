@@ -37,7 +37,6 @@ lruFib cache n = LruCache.IO.cached cache n $ do
     then return 1
     else (+) <$> lruFib cache (n - 2) <*> lruFib cache (n - 1)
 
-  -- TODO: Implement
 main :: IO ()
 main = do
   cache <- LruCache.IO.newLruHandle 2
